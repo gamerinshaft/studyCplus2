@@ -1,8 +1,12 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
-    cout << "My age is " << 21 << endl;
+    string name;
+    cout << "Please input your name." << endl;
+    cin >> name;
+    cout << "your name is " << name << "." << endl;
     return 0;
 }
