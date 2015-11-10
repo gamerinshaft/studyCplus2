@@ -3,14 +3,19 @@
 
 using namespace std;
 
-int main() {
+class Neko
+{
+private:
     string name;
-    int age;
-    cout << "Please input your name." << endl;
-    cin >> name;
-    cout << "your name is " << name << "." << endl;
-    cout << "Please tell me your age." << endl;
-    cin >> age;
-    cout << "your age is " << age << endl;
-    return 0;
+public:
+    Neko(string s){
+        name = s;
+    }
+    void naku(){
+        cout << "我輩は" << name << "である。" << endl;
+    }
+};
+int main() {
+    Neko dora("ボス");
+    dora.naku();
 }
